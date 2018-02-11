@@ -2,5 +2,5 @@
 CC?=gcc
 
 all:
-	type $(CC)
+	$(CC) --version
 
