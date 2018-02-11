@@ -1,5 +1,6 @@
 language: c
-install: make
+install: echo "install"
+script: make
 compiler:
   - clang
   - gcc
