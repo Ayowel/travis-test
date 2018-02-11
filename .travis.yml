@@ -139,23 +139,23 @@ matrix:
     #####################################
 
     - os: osx
-      osx_image: xcode6.4
+      osx_image: xcode6.4 # clang-602.0.53
       env:
         - MATRIX_EVAL="CC=clang && CXX=clang++"
     - os: osx
-      osx_image: xcode7.3
+      osx_image: xcode7.3 # clang-703.0.31
       env:
         - MATRIX_EVAL="CC=clang && CXX=clang++"
     - os: osx
-      osx_image: xcode8
+      osx_image: xcode8 # clang-800.0.38
       env:
         - MATRIX_EVAL="CC=clang && CXX=clang++"
     - os: osx
-      osx_image: xcode9
+      osx_image: xcode9 # clang-900.0.37
       env:
         - MATRIX_EVAL="CC=clang && CXX=clang++"
     - os: osx
-      osx_image: xcode9.3beta
+      osx_image: xcode9.3beta # clang-902.0.30
       env:
         - MATRIX_EVAL="CC=clang && CXX=clang++"
 
