@@ -1,10 +1,15 @@
 
 CC?=gcc
+CFLAGS=-ansi
+CFLAGS+=-std=c90
 
 %.o: %.c
-	$(CC) -c $< -ansi -std=c90
+	$(CC) -c $< $(CFLAGS)
 
 all: hello.o
 	$(CC) --version
-	$(CC) -o hello -ansi -std=c90 hello.o
+	$(CC) -o hello hello.o $(CFLAGS)
+
+test:
+	./hello
 

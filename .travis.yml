@@ -1,6 +1,6 @@
 language: c
 install: echo "install"
-script: make
+script: make && make test
 
 matrix:
   include:
