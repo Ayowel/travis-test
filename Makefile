@@ -2,5 +2,5 @@
 CC?=gcc
 
 all:
-	echo $(CC)
+	type $(CC)
 
